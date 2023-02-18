@@ -6,7 +6,7 @@ int[] list = new int[100];
 
 for (int i = 0; i < 100; i++)
 {
-        list[i] = i;
+    list[i] = i;
 }
 
 int findNumber(int[] collection, int start, int end, int searchTerm)
@@ -22,7 +22,7 @@ int findNumber(int[] collection, int start, int end, int searchTerm)
 
     Console.WriteLine("Start {0}, End {1}, Middle {2}, {3}", start, end, dynamicMiddle, side);
 
-    if (IsMiddle){ Console.WriteLine("IsMiddle!!"); return collection[dynamicMiddle];}
+    if (IsMiddle) { Console.WriteLine("IsMiddle!!"); return collection[dynamicMiddle]; }
 
     if (OnRightSide) return findNumber(collection, dynamicMiddle + 1, end, searchTerm);
 
