@@ -4,7 +4,7 @@ int searchTerm = 51;
 
 int[] list = new int[100];
 
-for (int i = 0; i < 100; i++)
+for (int i = 0; i < list.Length; i++)
 {
     list[i] = i;
 }

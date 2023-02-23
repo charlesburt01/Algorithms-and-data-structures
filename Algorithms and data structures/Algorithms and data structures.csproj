@@ -9,11 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="QuickSearchThroughListOfAscNumbers.cs" />
+    <Compile Remove="BinarySearchRecursive.cs" />
+    <Compile Remove="BinarySearchWhileLoops.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="QuickSearchThroughListOfAscNumbers.cs" />
+    <None Include="BinarySearchWhileLoops.cs" />
+    <None Include="BinarySearchRecursive.cs" />
   </ItemGroup>
 
 </Project>

@@ -42,47 +42,62 @@ int fibonacci(int number)
 
     return fibonacci(number - 2) + fibonacci(number - 1);
 }
-
+============== O(n!) ........... Horrible (7th Place)
+no example yet
 
 */
 
-
-
+/*
 int count = 0;
-int[] list = new int[1000000000];
-int searchTerm = list.Length - 1;
 
-for (int i = 0; i < list.Length; i++)
-{
-    list[i] = i;
-}
-
-int findNumber(int[] collection, int start, int end, int searchTerm)
+int fibonacci(int number)
 {
     count++;
-    int dynamicMiddle = start + (end - start) / 2;
-    bool IsMiddle = searchTerm == collection[dynamicMiddle];
-    bool OnRightSide = searchTerm > collection[dynamicMiddle];
-    bool OnLeftSide = searchTerm < collection[dynamicMiddle];
+    if (number <= 1) return number;
 
-    string side = "";
-    if (OnRightSide) side = "right"; if (OnLeftSide) side = "left";
+    return fibonacci(number - 2) + fibonacci(number - 1);
+}
 
-    Console.WriteLine("Start {0}, End {1}, Middle {2}, {3}", start, end, dynamicMiddle, side);
+int input = 6;
+int output = fibonacci(input); 
+Console.WriteLine("Input = {0}, Output = {1}, done {2} operations", input, output, count);
+*/
 
-    if (IsMiddle) { Console.WriteLine("IsMiddle!!"); return collection[dynamicMiddle]; }
+/*
+HashSet<int> set = new HashSet<int>();
+set.Add(1);
+set.Add(2);
+set.Add(3);
+set.Add(3);
+set.Add(1);
 
-    if (OnRightSide) return findNumber(collection, dynamicMiddle + 1, end, searchTerm);
+foreach (int element in set)
+{
+    Console.WriteLine(element);
+}*/
 
-    if (OnLeftSide) return findNumber(collection, start, dynamicMiddle - 1, searchTerm);
+/*int binary_search(int[] array, int value)
+{
+    Array.Sort(array);
+    int lowerBound = 0;
+    int upperBound = array.Length -1;
 
+    int count = 0;
+    while (lowerBound <= upperBound)
+    {
+        Console.WriteLine("Loop {0}", count);
+        count++;
+        int middleIndex = (upperBound + lowerBound) / 2;
+        int valueAtMiddleIndex = array[middleIndex];
+
+        if (value < valueAtMiddleIndex)
+            upperBound = middleIndex - 1;
+        else if (value > valueAtMiddleIndex)
+            lowerBound = middleIndex + 1;
+        else if (value == valueAtMiddleIndex)
+            return valueAtMiddleIndex;
+    }
     return -1;
 }
-Console.WriteLine("Search Term = " + searchTerm);
-long startTime = System.DateTime.Now.Millisecond;
 
-int termFound = findNumber(list, 0, list.Length, searchTerm);
-
-long endTime = System.DateTime.Now.Millisecond;
-
-Console.WriteLine("Term found = " + termFound + "\nTime taken = " + (endTime - startTime) + " m.\nFunction calls = " + count);
+Console.WriteLine(binary_search(new int[4] { 17, 3, 202, 80 }, 3));*/
