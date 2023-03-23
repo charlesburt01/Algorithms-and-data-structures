@@ -11,11 +11,13 @@
   <ItemGroup>
     <Compile Remove="BinarySearchRecursive.cs" />
     <Compile Remove="BinarySearchWhileLoops.cs" />
+    <Compile Remove="BubbleSort.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="BinarySearchWhileLoops.cs" />
     <None Include="BinarySearchRecursive.cs" />
+    <None Include="BubbleSort.cs" />
   </ItemGroup>
 
 </Project>
