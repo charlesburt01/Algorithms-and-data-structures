@@ -1,5 +1,7 @@
 ﻿//Selection Sort N^2
 //this is described as N^2 even though its more accurately N^2 / 2 and faster than the Bubble Sort algo, which is spot on N^2
+//this is because the categories of Big O are so vastly different that it doesn't matter what the constants are.
+//however when 2 algos come under the same classification of Big O, then we should look at them in more detail, so that we can identify which one to use, as one could be 100 times faster than the other.
 using System;
 
 int steps = 0;
