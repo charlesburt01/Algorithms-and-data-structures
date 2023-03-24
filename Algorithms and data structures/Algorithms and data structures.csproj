@@ -12,12 +12,14 @@
     <Compile Remove="BinarySearchRecursive.cs" />
     <Compile Remove="BinarySearchWhileLoops.cs" />
     <Compile Remove="BubbleSort.cs" />
+    <Compile Remove="HasDuplicates.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="BinarySearchWhileLoops.cs" />
     <None Include="BinarySearchRecursive.cs" />
     <None Include="BubbleSort.cs" />
+    <None Include="HasDuplicates.cs" />
   </ItemGroup>
 
 </Project>
