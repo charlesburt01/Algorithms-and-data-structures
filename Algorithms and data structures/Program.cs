@@ -47,5 +47,35 @@ no example yet
 
 */
 
+//===================Optimising Functions Example==========================
+
+//Speeding up functions, alarm bells should be ringing if the function is O(N^2) or above.
+//Example of the nested loop function we should optimize, first we identify that it has a time complexity of O(N^2)
+//which is a slow function, that gets slower as the data increases.
+
+int steps = 0;
+//Slow function
+bool HasDuplicateValue(int[] array)
+{
+    steps = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        for (int j = 0; j < array.Length; j++)
+        {
+            steps++;
+            if(i != j && array[i] == array[j])
+                return true;
+        }
+    }
+    return false;
+}
+//Lets use an array with no duplicates so that we get the worst case scenario for the function
+int[] arrayWithNoDuplicates = new int[] { 0, 6, 1, 2, 4 };
+bool hasDuplicates = HasDuplicateValue(arrayWithNoDuplicates);
+Console.WriteLine("Array size = " + arrayWithNoDuplicates.Length + ". Steps taken = " + steps + ". Has Duplicates = " + hasDuplicates);
+
+//Optimised version
 
 
+
+//===================End Optimising Functions Example======================
