@@ -13,6 +13,7 @@
     <Compile Remove="BinarySearchWhileLoops.cs" />
     <Compile Remove="BubbleSort.cs" />
     <Compile Remove="HasDuplicates.cs" />
+    <Compile Remove="InsertionSort.cs" />
     <Compile Remove="SelectionSort.cs" />
   </ItemGroup>
 
@@ -21,6 +22,7 @@
     <None Include="BinarySearchRecursive.cs" />
     <None Include="BubbleSort.cs" />
     <None Include="HasDuplicates.cs" />
+    <None Include="InsertionSort.cs" />
     <None Include="SelectionSort.cs" />
   </ItemGroup>
 
