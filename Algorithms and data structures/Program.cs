@@ -50,7 +50,7 @@ no example yet
 
 
 
-//Insertion Sort
+//Intersect (returns a third array with the common values in 2 arrays)
 
 List<int> intersection(int[] firstArray, int[] secondArray)
 {
