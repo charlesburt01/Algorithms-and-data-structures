@@ -50,34 +50,36 @@ no example yet
 
 
 
-//Intersect (returns a third array with the common values in 2 arrays)
-
-List<int> intersection(int[] firstArray, int[] secondArray)
+/*//
+string ReturnCharacterCombinations(string s)
 {
-    List<int> arr = new List<int>();
+    string x = "";
 
-    for (int i = 0; i < firstArray.Length; i++)
+    for (int i = 0; i < s.Length; i++)
     {
-        for (int j = 0; j < secondArray.Length; j++)
+        for(int j = 0; j < s.Length; j++)
         {
-            if (firstArray[i] == secondArray[j])
+            if(j != i)
             {
-                arr.Add(firstArray[i]);
-                break;
+                x += s[i].ToString() + s[j].ToString();
             }
         }
     }
 
-    return arr;
+    return x;
 }
 
-int[] arr1 = new int[] { 4, 2, 7, 1, 3 };// 2, 4, 7, 1, 3 // 2, 4, 1, 7, 3 // 2, 1, 4, 7, 3 /// 1, 2, 4, 7, 3 /// 1, 2, 4, 3, 7 ///  1, 2, 4, 3, 7///  1, 2, 3, 4, 7
-int[] arr2 = new int[] { 1, 2, 3, 3, 0 };// 2, 4, 7, 1, 3 // 2, 4, 1, 7, 3 // 2, 1, 4, 7, 3 /// 1, 2, 4, 7, 3 /// 1, 2, 4, 3, 7 ///  1, 2, 4, 3, 7///  1, 2, 3, 4, 7
-List<int> arr = intersection(arr1,arr2);
-string output = "";
+string arr1 = "abcd";
+//int[] arr2 = new int[] { 1, 2, 3, 3, 0 };// 2, 4, 7, 1, 3 // 2, 4, 1, 7, 3 // 2, 1, 4, 7, 3 /// 1, 2, 4, 7, 3 /// 1, 2, 4, 3, 7 ///  1, 2, 4, 3, 7///  1, 2, 3, 4, 7
+string output = ReturnCharacterCombinations(arr1);
+//string output = "";
 
-for (int i = 0; i < arr.Count; i++)
+*//*for (int i = 0; i < arr.Count; i++)
 {
     output += arr[i];
-}
-Console.WriteLine(output);
+}*//*
+Console.WriteLine(output);*/
+
+
+
+

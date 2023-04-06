@@ -14,6 +14,7 @@
     <Compile Remove="BubbleSort.cs" />
     <Compile Remove="HasDuplicates.cs" />
     <Compile Remove="InsertionSort.cs" />
+    <Compile Remove="Intersection.cs" />
     <Compile Remove="SelectionSort.cs" />
   </ItemGroup>
 
@@ -23,6 +24,7 @@
     <None Include="BubbleSort.cs" />
     <None Include="HasDuplicates.cs" />
     <None Include="InsertionSort.cs" />
+    <None Include="Intersection.cs" />
     <None Include="SelectionSort.cs" />
   </ItemGroup>
 
