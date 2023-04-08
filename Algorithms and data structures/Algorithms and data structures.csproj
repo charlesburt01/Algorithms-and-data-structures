@@ -9,23 +9,33 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="AnonymousTypes.cs" />
     <Compile Remove="BinarySearchRecursive.cs" />
     <Compile Remove="BinarySearchWhileLoops.cs" />
     <Compile Remove="BubbleSort.cs" />
     <Compile Remove="HasDuplicates.cs" />
+    <Compile Remove="Hashtables\HashtableDoesNumberExist.cs" />
+    <Compile Remove="Hashtables\HashtableObjectsWithVariousAttributes.cs" />
+    <Compile Remove="Hashtables\HashtableStatusCodes.cs" />
     <Compile Remove="InsertionSort.cs" />
     <Compile Remove="Intersection.cs" />
     <Compile Remove="SelectionSort.cs" />
+    <Compile Remove="Tuple.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="BinarySearchWhileLoops.cs" />
-    <None Include="BinarySearchRecursive.cs" />
-    <None Include="BubbleSort.cs" />
+    <None Include="AnonymousTypes.cs" />
+    <None Include="Search\BinarySearchWhileLoops.cs" />
+    <None Include="Search\BinarySearchRecursive.cs" />
+    <None Include="Sort\BubbleSort.cs" />
     <None Include="HasDuplicates.cs" />
-    <None Include="InsertionSort.cs" />
+    <None Include="Hashtables\HashtableDoesNumberExist.cs" />
+    <None Include="Hashtables\HashtableObjectsWithVariousAttributes.cs" />
+    <None Include="Hashtables\HashtableStatusCodes.cs" />
+    <None Include="Sort\InsertionSort.cs" />
     <None Include="Intersection.cs" />
-    <None Include="SelectionSort.cs" />
+    <None Include="Sort\SelectionSort.cs" />
+    <None Include="Tuple.cs" />
   </ItemGroup>
 
 </Project>
