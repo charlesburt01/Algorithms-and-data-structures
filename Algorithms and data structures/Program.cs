@@ -80,29 +80,3 @@ string output = ReturnCharacterCombinations(arr1);
 }*//*
 Console.WriteLine(output);*/
 
-
-//Array subset (find out wether or not a second array is contained within the first array)
-bool IsSubsetArrayVersion(int[] masterArray, int[] checkSubsetArray)
-{
-    int numbersToMatch = checkSubsetArray.Length;
-    int numbersMatched = 0;
-    for (int i = 0; i < checkSubsetArray.Length; i++)
-    {
-        for (int j = 0; j < masterArray.Length; j++)
-        {
-            if (checkSubsetArray[i] == masterArray[j])
-            {
-                numbersMatched++;
-                break;
-            }
-        }
-    }
-    return numbersMatched == numbersToMatch;
-}
-Console.WriteLine(IsSubsetArrayVersion(new int[] {1,0,3}, new int[] {0,1})); //output should be true
-Console.WriteLine(IsSubsetArrayVersion(new int[] {1,0,3}, new int[] {0,1,4})); //output should be false
-bool IsSubsetHashtableVersion(int[] masterArray, int[] checkSubsetArray)
-{
-
-    return true;
-}
