@@ -8,7 +8,7 @@ using System.Collections;
 char? GetFirstNonDuplicate(string inputString)
 {
     Hashtable inputStringHashed = new Hashtable();
-    foreach (char letter in inputString)
+    foreach (char letter in inputString) //=========== O(N)
     {
         if (inputStringHashed.ContainsKey(letter) && inputStringHashed[letter] is int)
         {
@@ -17,13 +17,13 @@ char? GetFirstNonDuplicate(string inputString)
         else
             inputStringHashed[letter] = 1;
     }
-    foreach (char letter in inputString)
+    foreach (char letter in inputString) //=========== O(N)
     {
         if ((int?)inputStringHashed[letter] == 1)
             return letter;
     }
     return null;
-}//=================================================TOTAL = 
+}//=================================================TOTAL = O(N+N) = O(N)
 
 Console.WriteLine("Expected = n. Actual = " + GetFirstNonDuplicate("minimum")); // should print n
 Console.WriteLine("Expected = d. Actual = " + GetFirstNonDuplicate("aabbccdee")); // should print d
