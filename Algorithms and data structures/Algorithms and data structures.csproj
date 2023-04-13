@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <Compile Remove="AnonymousTypes.cs" />
+    <Compile Remove="Hashtables\HashtableGetDuplicate.cs" />
+    <Compile Remove="Hashtables\HashtableGetMissingLetter.cs" />
     <Compile Remove="Hashtables\HashtableIntersection.cs" />
     <Compile Remove="Hashtables\HashtableIntersectionV2.cs" />
     <Compile Remove="Hashtables\HashtableSpeedComparison.cs" />
@@ -28,6 +30,8 @@
 
   <ItemGroup>
     <None Include="AnonymousTypes.cs" />
+    <None Include="Hashtables\HashtableGetDuplicate.cs" />
+    <None Include="Hashtables\HashtableGetMissingLetter.cs" />
     <None Include="Hashtables\HashtableIntersection.cs" />
     <None Include="Hashtables\HashtableIntersectionV2.cs" />
     <None Include="Hashtables\HashtableSpeedComparison.cs" />
