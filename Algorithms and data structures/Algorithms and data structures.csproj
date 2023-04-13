@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <Compile Remove="AnonymousTypes.cs" />
+    <Compile Remove="Hashtables\HashtableIntersection.cs" />
     <Compile Remove="Hashtables\HashtableSpeedComparison.cs" />
     <Compile Remove="Search\BinarySearchRecursive.cs" />
     <Compile Remove="Search\BinarySearchWhileLoops.cs" />
@@ -26,6 +27,7 @@
 
   <ItemGroup>
     <None Include="AnonymousTypes.cs" />
+    <None Include="Hashtables\HashtableIntersection.cs" />
     <None Include="Hashtables\HashtableSpeedComparison.cs" />
     <None Include="Search\BinarySearchWhileLoops.cs" />
     <None Include="Search\BinarySearchRecursive.cs" />
