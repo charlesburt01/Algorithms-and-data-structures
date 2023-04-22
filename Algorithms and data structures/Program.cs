@@ -5,5 +5,11 @@ The property of the other .cs files are build action none, so they dont compile,
 
 
 
+//chapter 9
+/*Q1 = queue
+ * Q2 = 4
+ * Q3 = 3
+ * */
+
 
 
