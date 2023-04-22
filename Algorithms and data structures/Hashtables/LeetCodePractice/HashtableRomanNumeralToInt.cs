@@ -66,6 +66,7 @@ int RomanToInt(string s)
         Console.WriteLine($"pointer = {pointer} nextPointer = {nextPointer}");
         if (!letterValuePairs.ContainsKey(pointer)) continue;
         //catch the 6 cases where subtraction is used
+        //the below was a quick solution, however, after looking at the other solutions, a more elegant way to approach this is to make use of the fact that when the numbers are subtracted, the nextPointer will be greater than the pointer
         if (pointer == "I" && nextPointer == "V")
         {
             answer += 4;
