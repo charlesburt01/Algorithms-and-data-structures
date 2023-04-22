@@ -30,6 +30,7 @@
     <Compile Remove="Intersection.cs" />
     <Compile Remove="Sort\SelectionSort.cs" />
     <Compile Remove="Stacks\StackCodeLinter.cs" />
+    <Compile Remove="Stacks\LeetCodePractice\StackMaxDepth.cs" />
     <Compile Remove="Stacks\StackReverseString.cs" />
     <Compile Remove="Tuple.cs" />
   </ItemGroup>
@@ -56,6 +57,7 @@
     <None Include="Intersection.cs" />
     <None Include="Sort\SelectionSort.cs" />
     <None Include="Stacks\StackCodeLinter.cs" />
+    <None Include="Stacks\LeetCodePractice\StackMaxDepth.cs" />
     <None Include="Stacks\StackReverseString.cs" />
     <None Include="Tuple.cs" />
   </ItemGroup>
