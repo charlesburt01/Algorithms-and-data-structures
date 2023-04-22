@@ -10,12 +10,14 @@
 
   <ItemGroup>
     <Compile Remove="AnonymousTypes.cs" />
+    <Compile Remove="BigONotation.cs" />
     <Compile Remove="Hashtables\HashtableGetDuplicate.cs" />
     <Compile Remove="Hashtables\HashtableGetFirstNonDuplicate.cs" />
     <Compile Remove="Hashtables\HashtableGetMissingLetter.cs" />
     <Compile Remove="Hashtables\HashtableIntersection.cs" />
     <Compile Remove="Hashtables\HashtableIntersectionV2.cs" />
     <Compile Remove="Hashtables\HashtableSpeedComparison.cs" />
+    <Compile Remove="Hashtables\LeetCodePractice\HashtableRomanNumeralToInt.cs" />
     <Compile Remove="Search\BinarySearchRecursive.cs" />
     <Compile Remove="Search\BinarySearchWhileLoops.cs" />
     <Compile Remove="Sort\BubbleSort.cs" />
@@ -32,12 +34,14 @@
 
   <ItemGroup>
     <None Include="AnonymousTypes.cs" />
+    <None Include="BigONotation.cs" />
     <None Include="Hashtables\HashtableGetDuplicate.cs" />
     <None Include="Hashtables\HashtableGetFirstNonDuplicate.cs" />
     <None Include="Hashtables\HashtableGetMissingLetter.cs" />
     <None Include="Hashtables\HashtableIntersection.cs" />
     <None Include="Hashtables\HashtableIntersectionV2.cs" />
     <None Include="Hashtables\HashtableSpeedComparison.cs" />
+    <None Include="Hashtables\LeetCodePractice\HashtableRomanNumeralToInt.cs" />
     <None Include="Search\BinarySearchWhileLoops.cs" />
     <None Include="Search\BinarySearchRecursive.cs" />
     <None Include="Sort\BubbleSort.cs" />
