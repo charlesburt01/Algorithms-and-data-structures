@@ -26,6 +26,7 @@
     <Compile Remove="Sort\InsertionSort.cs" />
     <Compile Remove="Intersection.cs" />
     <Compile Remove="Sort\SelectionSort.cs" />
+    <Compile Remove="Stacks\StackCodeLinter.cs" />
     <Compile Remove="Tuple.cs" />
   </ItemGroup>
 
@@ -47,6 +48,7 @@
     <None Include="Sort\InsertionSort.cs" />
     <None Include="Intersection.cs" />
     <None Include="Sort\SelectionSort.cs" />
+    <None Include="Stacks\StackCodeLinter.cs" />
     <None Include="Tuple.cs" />
   </ItemGroup>
 
