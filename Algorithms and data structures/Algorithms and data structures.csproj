@@ -21,6 +21,7 @@
     <Compile Remove="Queues\QueuePrintManager.cs" />
     <Compile Remove="Recursion\RecursionCountdown.cs" />
     <Compile Remove="Recursion\RecursionPrintAllNumbers.cs" />
+    <Compile Remove="Recursion\RecursiveSummation.cs" />
     <Compile Remove="Search\BinarySearchRecursive.cs" />
     <Compile Remove="Search\BinarySearchWhileLoops.cs" />
     <Compile Remove="Sort\BubbleSort.cs" />
@@ -50,6 +51,7 @@
     <None Include="Queues\QueuePrintManager.cs" />
     <None Include="Recursion\RecursionCountdown.cs" />
     <None Include="Recursion\RecursionPrintAllNumbers.cs" />
+    <None Include="Recursion\RecursiveSummation.cs" />
     <None Include="Search\BinarySearchWhileLoops.cs" />
     <None Include="Search\BinarySearchRecursive.cs" />
     <None Include="Sort\BubbleSort.cs" />
