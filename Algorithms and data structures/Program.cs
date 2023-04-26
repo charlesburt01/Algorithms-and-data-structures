@@ -17,4 +17,3 @@ The property of the other .cs files are build action none, so they dont compile,
 Console.WriteLine(add(new int[] { 1,2,3,4,5 }));*/
 
 
-
