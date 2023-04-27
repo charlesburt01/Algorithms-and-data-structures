@@ -82,4 +82,8 @@
     <None Include="Tuple.cs" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Search\LeetCodePractice\" />
+  </ItemGroup>
+
 </Project>

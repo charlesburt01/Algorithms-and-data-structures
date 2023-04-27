@@ -38,7 +38,7 @@ n == tickets.length
 using System;
 using System.Collections;
 using System.Collections.Generic;
-
+//Queue of Tuples examples
 int TimeRequiredToBuy(int[] tickets, int k)
 {
     Queue<Tuple<int, bool>> dataQueue = new Queue<Tuple<int, bool>>();
@@ -81,3 +81,47 @@ int TimeRequiredToBuy(int[] tickets, int k)
 }
 Console.WriteLine("Expected = 6, actual = " + TimeRequiredToBuy(new int[] { 2, 3, 2 }, 2));
 Console.WriteLine("Expected = 8, actual = " + TimeRequiredToBuy(new int[] { 5, 1, 1, 1 }, 0));
+
+//2D array example
+int TimeRequiredToBuy2D(int[] tickets, int k)
+{
+    Queue<int[][]> dataQueue = new Queue<int[][]>();
+
+    for (int i = 0; i < tickets.Length; i++)
+    {
+        if (k == i)
+        {
+            dataQueue.Enqueue(new int[][] { new int[] { tickets[i], 1 } });
+        }
+        else
+        {
+            dataQueue.Enqueue(new int[][] { new int[] { tickets[i], 0 } });
+        }
+    }
+    int ticketsLeft = tickets[k];
+    int timeWaited = 0;
+    while (ticketsLeft > 0)
+    {
+        var currentItem = dataQueue.Peek();
+        bool isIndexedItem = (currentItem[0][1] == 1 ? true : false);
+
+        if (currentItem[0][0] > 0)
+        {
+            timeWaited++;
+            dataQueue.Enqueue(new int[][] { new int[] { currentItem[0][0] - 1, isIndexedItem == true ? 1 : 0 } });
+            dataQueue.Dequeue();
+        }
+        else if (currentItem[0][0] == 0)
+        {
+            dataQueue.Dequeue();
+        }
+        if (isIndexedItem)
+        {
+            ticketsLeft = currentItem[0][0] - 1;
+        }
+
+    }
+    return timeWaited;
+}
+Console.WriteLine("Expected = 6, actual = " + TimeRequiredToBuy2D(new int[] { 2, 3, 2 }, 2));
+Console.WriteLine("Expected = 8, actual = " + TimeRequiredToBuy2D(new int[] { 5, 1, 1, 1 }, 0));
