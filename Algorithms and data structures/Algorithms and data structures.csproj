@@ -21,6 +21,7 @@
     <Compile Remove="Queues\LeetCodePractice\QueueStudentSandwich.cs" />
     <Compile Remove="Queues\LeetCodePractice\QueueTimeRequiredToBuy.cs" />
     <Compile Remove="Queues\QueuePrintManager.cs" />
+    <Compile Remove="Recursion\RecursionArraySum.cs" />
     <Compile Remove="Recursion\RecursionBottomUpFactorial.cs" />
     <Compile Remove="Recursion\RecursionCountdown.cs" />
     <Compile Remove="Recursion\RecursionPrintAllNumbers.cs" />
@@ -55,6 +56,7 @@
     <None Include="Queues\LeetCodePractice\QueueStudentSandwich.cs" />
     <None Include="Queues\LeetCodePractice\QueueTimeRequiredToBuy.cs" />
     <None Include="Queues\QueuePrintManager.cs" />
+    <None Include="Recursion\RecursionArraySum.cs" />
     <None Include="Recursion\RecursionBottomUpFactorial.cs" />
     <None Include="Recursion\RecursionCountdown.cs" />
     <None Include="Recursion\RecursionPrintAllNumbers.cs" />
