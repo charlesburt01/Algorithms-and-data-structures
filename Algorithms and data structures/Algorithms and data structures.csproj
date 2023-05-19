@@ -24,10 +24,10 @@
     <Compile Remove="Recursion\RecursionArraySum.cs" />
     <Compile Remove="Recursion\RecursionBottomUpFactorial.cs" />
     <Compile Remove="Recursion\RecursionCountdown.cs" />
+    <Compile Remove="Recursion\RecursionCountingXs.cs" />
     <Compile Remove="Recursion\RecursionPrintAllNumbers.cs" />
     <Compile Remove="Recursion\RecursionStringReversal.cs" />
     <Compile Remove="Recursion\RecursiveSummation.cs" />
-    <Compile Remove="Recursion\RecusrsionCountingXs.cs" />
     <Compile Remove="Recursion\RecusrsionTopDownFactorial.cs" />
     <Compile Remove="Search\BinarySearchRecursive.cs" />
     <Compile Remove="Search\BinarySearchWhileLoops.cs" />
@@ -64,7 +64,7 @@
     <None Include="Recursion\RecursionPrintAllNumbers.cs" />
     <None Include="Recursion\RecursionStringReversal.cs" />
     <None Include="Recursion\RecursiveSummation.cs" />
-    <None Include="Recursion\RecusrsionCountingXs.cs" />
+    <None Include="Recursion\RecursionCountingXs.cs" />
     <None Include="Recursion\RecusrsionTopDownFactorial.cs" />
     <None Include="Search\BinarySearchWhileLoops.cs" />
     <None Include="Search\BinarySearchRecursive.cs" />

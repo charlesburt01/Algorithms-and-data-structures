@@ -31,9 +31,9 @@ int CountXSimple(string s)
             return 0;
     }
     if (s[0].ToString() == "x")
-        return 1 + CountX(s.Substring(1, s.Length - 1));
+        return 1 + CountXSimple(s.Substring(1, s.Length - 1));
     else
-        return CountX(s.Substring(1, s.Length - 1));
+        return CountXSimple(s.Substring(1, s.Length - 1));
 }
 
 Console.WriteLine("Expected = 3, actual = " + CountXSimple("axbxcxd"));
@@ -45,9 +45,9 @@ int CountXSimpler(string s)
     if (s.Length == 0)
         return 0;
     if (s[0].ToString() == "x")
-        return 1 + CountX(s.Substring(1, s.Length - 1));
+        return 1 + CountXSimpler(s.Substring(1, s.Length - 1));
     else
-        return CountX(s.Substring(1, s.Length - 1));
+        return CountXSimpler(s.Substring(1, s.Length - 1));
 }
 
 Console.WriteLine("Expected = 3, actual = " + CountXSimpler("axbxcxd"));
